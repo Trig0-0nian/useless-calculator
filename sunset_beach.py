@@ -89,7 +89,7 @@ class UltraCalculator:
         self.root.configure(bg=theme['bg'])
         
     def create_widgets(self):
-        # ============ TOP NAVIGATION BAR ============
+        #  TOP NAVIGATION BAR 
         nav_frame = tk.Frame(self.root, bg=self.themes[self.current_theme]['bg'], height=60)
         nav_frame.pack(fill='x', padx=15, pady=(15, 0))
         
@@ -133,7 +133,7 @@ class UltraCalculator:
             btn.pack(side='left', padx=2)
             self.mode_buttons[mode] = btn
             
-        # ============ STATUS BAR ============
+        # STATUS BAR 
         status_frame = tk.Frame(self.root, bg=self.themes[self.current_theme]['bg'], height=35)
         status_frame.pack(fill='x', padx=15, pady=(8, 0))
         
@@ -173,7 +173,7 @@ class UltraCalculator:
                                 bd=0, padx=10, pady=3)
         self.sci_btn.pack(side='right')
         
-        # ============ DISPLAY AREA ============
+        #  DISPLAY AREA
         self.display_frame = tk.Frame(self.root, bg=self.themes[self.current_theme]['display_bg'])
         self.display_frame.pack(fill='x', padx=15, pady=(15, 0))
         
@@ -196,7 +196,7 @@ class UltraCalculator:
                                      anchor='e', height=1)
         self.result_label.pack(fill='x', pady=(5, 0))
         
-        # ============ CONTENT AREA (Switchable) ============
+        # CONTENT AREA 
         self.content_frame = tk.Frame(self.root, bg=self.themes[self.current_theme]['bg'])
         self.content_frame.pack(fill='both', expand=True, padx=15, pady=15)
         
@@ -731,3 +731,4 @@ if __name__ == "__main__":
                          "🧮 Useless Calculator Pro Max Ultra v3.0\n\n✨ Features:\n• 3 Themes (Dark/Light/Neon)\n• Scientific Calculator\n• Unit Converter\n• Math Challenge Game\n• Real-time Clock\n• Memory Functions\n• Keyboard Support\n• Auto-close Parentheses\n\n🎮 Absolutely useless but fun!\n\nMade with Python & Tkinter"))
     
     root.mainloop()
+
